@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>README - C&M Mining Machines Reservation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>C&M Mining Machines Reservation System</h1>
+
+        <h2>Overview</h2>
+        <p>
+            The <strong>C&M Mining Machines Reservation System</strong> is a console-based Java application designed to manage customer records for a mining machine reservation service. The system allows users to perform CRUD (Create, Read, Update, Delete) operations on customer records, manage inventory details, and calculate costs for reserved items. The application uses file-based storage to persist customer data.
+        </p>
+
+        <h2>Features</h2>
+        <ul>
+            <li><strong>User Authentication:</strong> Simple login interface to ensure secure access.</li>
+            <li><strong>CRUD Operations:</strong>
+                <ul>
+                    <li><strong>Add Customer Records:</strong> Input and validate customer details (ID, name, item details).</li>
+                    <li><strong>View All Records:</strong> Display all customer records in a formatted table.</li>
+                    <li><strong>Search Customer by ID:</strong> Quickly find and display a customer’s record.</li>
+                    <li><strong>Update Customer Records:</strong> Modify existing customer details.</li>
+                    <li><strong>Delete Customer Records:</strong> Remove a customer record from the system.</li>
+                </ul>
+            </li>
+            <li><strong>Price Calculation:</strong> Automatically calculate the total cost based on item price and quantity.</li>
+            <li><strong>User-Friendly Menu:</strong> Navigate through the options with a simple numbered menu.</li>
+            <li><strong>File Persistence:</strong> Customer data is stored in a text file, ensuring records persist even after closing the program.</li>
+        </ul>
+
+        <h2>Project Structure</h2>
+        <p>
+            <strong>Main Class:</strong> <code>KHALIL.java</code><br>
+            Handles all the logic for the system including login, menu navigation, and CRUD operations.
+        </p>
+        <p>
+            <strong>Data Storage:</strong> Customer records are stored in a text file (<code>CUSTOMER.txt</code>) in a comma-separated format.
+        </p>
+
+        <h2>How to Run the Project</h2>
+        <ol>
+            <li>Clone the Repository:
+                <pre><code>git clone https://github.com/yourusername/your-repository-name.git</code></pre>
+            </li>
+            <li>Navigate to the Project Directory:
+                <pre><code>cd your-repository-name</code></pre>
+            </li>
+            <li>Compile the Java Program:
+                <pre><code>javac KHALIL.java</code></pre>
+            </li>
+            <li>Run the Program:
+                <pre><code>java KHALIL</code></pre>
+            </li>
+        </ol>
+
+        <h2>Usage Instructions</h2>
+        <ol>
+            <li><strong>Login:</strong> Enter the username and password to access the system.
+                <ul>
+                    <li>Default Credentials:</li>
+                    <li>Username: <code>MUHAMMAD</code></li>
+                    <li>Password: <code>KHALIL</code></li>
+                </ul>
+            </li>
+            <li><strong>Menu Options:</strong> After logging in, choose from the menu options:
+                <ul>
+                    <li>1: Add Customer Records</li>
+                    <li>2: View All Records</li>
+                    <li>3: Search Customer by ID</li>
+                    <li>4: Update Customer Records</li>
+                    <li>5: Delete Customer Records</li>
+                    <li>6: Calculate Customer Price</li>
+                    <li>7: Exit the Program</li>
+                </ul>
+            </li>
+        </ol>
+
+        <h2>File Storage</h2>
+        <p>The customer records are stored in a file named <code>CUSTOMER.txt</code>. Each record is saved as a line in the format:</p>
+        <pre><code>ID,Name,ItemName,Quantity,Price</code></pre>
+
+        <h2>Input Validation</h2>
+        <p>The program validates inputs such as numeric values for IDs, quantities, and prices, and ensures names and item names contain only alphabetical characters.</p>
+
+        <h2>Requirements</h2>
+        <ul>
+            <li><strong>Java Development Kit (JDK):</strong> Version 8 or above.</li>
+        </ul>
+
+        <h2>Example Run</h2>
+        <pre><code>Username: MUHAMMAD
+Password: KHALIL
+
+Logged In Successfully.
+
+1. To Add Customer Records
+2. To View Customer Records
+3. To Search Customer Records
+4. To Update Customer Records
+5. To Delete Customer Records
+6. To Calculate Customer Items
+7. To Exit the Program
+
+Enter Your Choice [1-7]:
+</code></pre>
+
+        <h2>Future Improvements</h2>
+        <ul>
+            <li><strong>GUI Implementation:</strong> Convert the system to a graphical user interface for better usability.</li>
+            <li><strong>Database Integration:</strong> Replace file storage with a relational database for better scalability and performance.</li>
+            <li><strong>Advanced Validation:</strong> Implement more sophisticated validation mechanisms to handle edge cases and erroneous inputs.</li>
+        </ul>
+
+        <h2>Contribution</h2>
+        <p>Feel free to fork this repository, create feature branches, and submit pull requests for any improvements or bug fixes.</p>
+
+        <h2>License</h2>
+        <p>This project is licensed under the MIT License - see the <code>LICENSE</code> file for details.</p>
+
+        <h2>Contact</h2>
+        <p>For any inquiries or issues, please open an issue on the repository or contact the project maintainer:</p>
+        <ul>
+            <li>Name: Khalil Muhammad Sani</li>
+            <li>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></li>
+        </ul>
+
+        <hr>
+        <p><em>This project was created as part of a software development course and is supervised by Mr. Nazifi Musa.</em></p>
+    </div>
+</body>
+</html>
